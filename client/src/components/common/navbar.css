@@ -1,0 +1,131 @@
+nav {
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 7px 12px #00000027;
+  padding: 0 30px;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav .left-nav {
+  gap: 3vw;
+  align-items: center;
+}
+
+.left-nav .bar {
+  font-size: 35px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+nav .logo {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+nav .profile {
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #364aff;
+  box-shadow: 0 3px 3px #6f6fff10;
+  cursor: pointer;
+}
+
+.side-bar {
+  background: #ffffff;
+  box-shadow: 0 7px 35px #ffffff;
+  width: 20%;
+  height: calc(100vh - 80px);
+  position: sticky;
+  top: 80px;
+  margin-top: 10px;
+  z-index: 2;
+  border-right: 2px solid #84c4e2;
+}
+
+.sidebar-container {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sidebar-container .option {
+  padding: 5px 15px;
+  font-size: 16px;
+  background: #ffffff;
+  box-shadow: 0 3px 4px #00000036;
+}
+
+.sidebar-container .option a {
+  color: #1b1515;
+  width: 100%;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+}
+
+.sidebar-container .option a.active {
+  color: #1f22d4;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .side-bar {
+    width: 0;
+  }
+
+  .sidebar-container {
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    gap: 0;
+    background: #ffffff;
+    height: 60px; 
+    box-shadow: 0 2px 20px #0000001a;
+  }
+
+  .sidebar-container .option {
+    padding: 5px;
+    font-size: 15px;
+    box-shadow: none;
+  }
+
+  .sidebar-container .option a {
+    width: auto;
+    flex-direction: column; 
+    overflow: hidden; 
+  }
+
+  .sidebar-container .option a span {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar-icon {
+    font-size: 30px;
+    color: #44474988;
+    font-weight: 800;
+  }
+
+  .sidebar-container .option a.active .sidebar-icon, .sidebar-container .option a.active  {
+    color: #19171b; 
+  }
+}

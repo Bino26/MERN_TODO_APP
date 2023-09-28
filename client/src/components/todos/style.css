@@ -1,0 +1,188 @@
+.loading {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading p {
+    font-size: 18px;
+    color: #ff0a0a;
+    font-weight: 600;
+}
+
+.loading p::after {
+    content: '😉';
+}
+
+.filter-container {
+    padding: 10px;
+}
+
+.filter-container label {
+    color: #393a3b;
+    font-weight: 600;
+}
+
+.filter-container select {
+    padding: 3px 7px;
+    font-size: 15px;
+    color: #414141;
+    box-shadow: 0 7px 30px #00000013;
+    border-radius: 7px;
+    border: none;
+}
+
+.add-todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 50px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 5px 15px #00000023;
+    border-radius: 20px;
+    max-width: 80%;
+    width: 95vw;
+}
+
+.add-todo-form textarea {
+    border: 1px solid #808080;
+    border: 7px;
+    font-size: 18px;
+    color: #000000;
+    resize: none;
+}
+
+.todos-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+.todos-container .todo {
+    background: #ffffff;
+    padding: 15px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px #00000021;
+    max-width: 95%;
+    width: 96vw;
+    position: relative;
+}
+
+.todos-container .todo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+
+}
+
+.todos-container .todo div span {
+    font-size: 18px;
+    margin-top: 3px;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+
+.todos-container .todo div button {
+    font-size: 14px;
+    padding: 5px 7px;
+    box-shadow: 0 3px 7px #00000038;
+}
+
+.todos-container .todo div button:last-child {
+    background: #fa0606;
+    color: #ffffff;
+}
+
+.todos-container .todo div button:first-child {
+    background: #ffffff;
+    color: #1c1c1c;
+}
+
+.todos-container .todo div .time-ago {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 13px;
+}
+
+.todos-container .todo div .btn-container {
+    display: flex;
+    gap: 5px;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+
+
+.todos-container div textarea[type="text"] {
+    padding: 5px 7px;
+    border: 1px solid #808080;
+    font-size: 17px;
+    color: #252525;
+    box-shadow: 0 2px 5px #0000002a;
+    resize: none;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.done {
+    height: 25px;
+    width: 27px;
+    font-size: 20px;
+    color: #1ceb1c;
+    box-shadow: 0 3px 10px #00000017;
+    border-radius: 50%;
+    margin: 10px 10px 0 10px;
+    background: #ffffff;
+}
+
+@media screen and (max-width: 840px) {
+    .todos-container .todo div button {
+        font-size: 12px;
+        padding: 3px 7px;
+    }
+
+    .todos-container .todo div span {
+        font-size: 17px;
+        margin-top: 4px;
+        width: 75%; 
+    }
+
+    .todos-container .todo div .time-ago {   
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .add-todo-form {
+        max-width: 93%;
+        margin: 50px auto;
+        box-shadow: 0 7px 25px #0000001f;
+    }
+
+    .todos-container {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    .todos-container .todo {
+        max-width: 100%;
+    }
+
+    
+    .todos-container .todo div span {
+        font-size: 16px;
+        margin-top: 5px;
+        width: 65%; 
+        line-height: 18px;
+    }
+}
