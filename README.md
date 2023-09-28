@@ -113,9 +113,9 @@ VITE_REACT_APP_API_KEY= backend_url
 
 3. Access the app in your web browser:
 
-Open a web browser and access the application at `http://localhost:3000`
+Open a web browser and access the application at `http://localhost:5173`
 
-**Note:** Make sure to update the port number (`3000`) according to your client server configuration.
+**Note:** Make sure to update the port number (`5173`) according to your client server configuration.
 
 Feel free to customize and enhance the project according to your needs and send pull requests.
 
