@@ -18,23 +18,10 @@ exports.signup = async (req, res) => {
     });
     await userInfo.save();
 
-    // Generate JWT token
-    const token = jwt.sign({ userId: userInfo._id }, process.env.SECRET, {
-      expiresIn: "12h",
-    });
-
-    // Set the JWT token as a cookie
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "none",
-    });
-
     // Send the status and success message
     return res.status(200).json({
       success: true,
       message: "User signup successful",
-      token: token,
     });
   } catch (error) {
     return res.status(400).json({
