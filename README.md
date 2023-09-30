@@ -4,16 +4,11 @@ It's todo's app built with MERN Stack . It's my final project at CTD
 
 ## Tech Stack
 
-- **Frontend:** React.js, HTML, CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Authentication:** JSON Web Tokens (JWT)
+- **Client:** React JS , Vite JS, CSS
 
-**Client:** React JS , Vite JS, CSS
+- **Server:** Node, Express , MongoDB .
 
-**Server:** Node, Express , MongoDB .
-
-**Authentication :** JSON Web Tokens (JWT)
+- **Authentication :** JSON Web Tokens (JWT)
 
 ## API Endpoints
 
